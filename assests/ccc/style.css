@@ -1,0 +1,359 @@
+/* RESET CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* COMMON */
+.text-color {
+    color: white !important;
+}
+.row {
+    margin: 0 -8px;
+}
+.row::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+.col {
+    float: left;
+    padding: 0 8px;
+}
+.col-full {
+    width: 100%;
+}
+.col-half {
+    width: 50%;
+}
+.col-third {
+    width: calc(100% / 3);
+}
+/* HEADER */
+#header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    height: 46px;
+    background-color: black;
+}
+.nav li {
+    position: relative;
+    display: block;
+    float: left;
+    padding: 0px 24px;
+    line-height: 46px;
+}
+.nav li:hover {
+    background-color: #ccc;
+}
+.nav li:hover a {
+    color: black;
+}
+.nav li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.nav li:hover .subnav {
+    display: block;
+}
+.nav .subnav {
+    display: none;
+    position: absolute;
+    background-color: white;
+    left: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.nav .subnav li {
+    width: 100%;
+    padding-left: 8px;
+    padding-right: 20px;
+    line-height: 25px;
+}
+.down-icon-header {
+    font-size: 10px;
+}
+.search-btn {
+    float: right;
+    line-height: 46px;
+    padding: 0px 23px;
+}
+.search-btn:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+.search-icon-header {
+    color: white;
+}
+/* SLIDER */
+#slider {
+    margin-top: 46px;
+    position: relative;
+    padding-top: 50%;
+    background: url(../img/slider/slider1.jpg) no-repeat scroll top center / cover;
+}
+.content-slider {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 32px 16px;
+}
+.heading-slider {
+    margin: 10px 0px;
+    font-size: 24px;
+    font-weight: 100;
+}
+.about-slider {
+    margin: 15px 0px;
+    font-weight: bold;
+}
+/* CONTENT */
+.style-content {
+    padding: 64px 16px;
+    width: 800px;
+    margin: 0 auto;
+}
+.usemore-content {
+    text-align: center;
+}
+.heading-usemore {
+    margin: 10px 0px;
+    font-size: 30px;
+    font-weight: 100;
+    letter-spacing: 4px;
+}
+.about-usemore {
+    font-style: italic;
+    opacity: 0.6;
+    margin: 15px 0px;
+}
+/* BAND */
+.band-content {
+    text-align: justify;
+    line-height: 1.4;
+    margin: 15px 0px;
+}
+.band-member {
+    padding: 32px 0px;
+}
+.each-member {
+    text-align: center;
+}
+.name-member {
+    margin: 15px 0px;
+}
+.avt-member {
+    width: 154px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+}
+/* TOUR */
+.places {
+    padding: 32px 0;
+}
+.tour-box {
+    background-color: black;
+}
+.list-ticket {
+    background-color: white;
+    margin-top: 40px;
+}
+.list-ticket li {
+    line-height: 2.5;
+    padding-left: 8px;
+    border-bottom: 1px solid #ccc;
+}
+.sold-out {
+    background-color: #f44336;
+    color: white;
+    margin-left: 12px;
+    padding: 6px 10px;
+}
+.quantity-ticket {
+    float: right;
+    background-color: black;
+    color: white;
+    padding: 0px 12px;
+    border-radius: 50%;
+    margin-right: 24px;
+}
+/* TOUR - TICKET */
+.img-place {
+    width: 100%;
+    display: block;
+}
+.img-place:hover {
+    opacity: 0.6;
+}
+.content-place {
+    background-color: white;
+    display: inline-block;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+.name-place {
+    margin: 15px 0px;
+}
+.date-place {
+    margin: 15px 0px;
+    opacity: 0.6;
+}
+.about-place {
+    margin: 15px 0px;
+}
+.buy {
+    margin-bottom: 16px;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+}
+.buy:hover {
+    background-color: #ccc;
+    color: black;
+    cursor: pointer;
+}
+/* CONTACT */
+.contact-body {
+    padding: 32px 0px;
+}
+.info-contact-body i[class*="ti-"] {
+    display: inline-block;
+    width: 24px;
+}
+.info-contact-body p {
+    font-size: 18px;
+    font-weight: 100;
+}
+.form-control {
+    width: 100%;
+    line-height: 2;
+    padding: 4px;
+}
+.name-email {
+    padding-bottom: 12px;
+}
+.message {
+    padding-bottom: 20px;
+}
+.btn-contact {
+    float: right;
+}
+/* MAP */
+.map {
+    width: 100%;
+}
+/* FOOTER */
+.icon {
+    text-align: center;
+}
+.icon i:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+.icon i {
+    font-size: 20px;
+    opacity: 0.6;
+}
+.footer p {
+    margin-top: 16px;
+    opacity: 0.6;
+    text-align: center;
+}
+.footer p a {
+    color: black;
+}
+/* SCRIPT */
+.open {
+    display: flex !important;
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: -140px;bottom: -140px;right: 0;left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    animation: modalFadeIn ease 0.5s;
+}
+.modal-box  {
+    width: 900px;
+    margin: 0 auto;
+}
+.heading-modal {
+    padding: 52px 16px;
+    position: relative;
+    background-color: #009688;
+    font-size: 50px;
+    font-weight: 100;
+    letter-spacing: 4px;
+    text-align: center;
+}
+.close-btn-modal {
+    position: absolute;
+    top: 0;right: 0;
+    padding: 10px 10px;
+}
+.close-btn-modal:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+.body-modal {
+    background-color: white;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: inline-block;
+    width: 100%;
+}
+.body-modal p i {
+    width: 18px;
+    display: inline-block;
+}
+.name-input-modal {
+    margin: 15px 0px;
+}
+.input-modal {
+    width: 100%;
+    line-height: 2;
+    padding: 4px;
+}
+.pay-modal {
+    margin: 16px 0px;
+    padding: 16px;
+    color: white;
+    background-color: #009688;
+    border: none;
+    width: 100%;
+}
+.pay-modal:hover {
+    background-color: #ccc;
+    color: black;
+    cursor: pointer;
+}
+.footer-modal {
+    float: right;
+    padding-bottom: 24px;
+}
+.footer-modal a {
+    color: #009688;
+}
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
